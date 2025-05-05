@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.14">
   <diagram name="Page-1" id="HIHJW5go3T7uCI4LzSzF">
-    <mxGraphModel dx="1018" dy="655" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2304" dy="936" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -48,6 +48,15 @@
         </mxCell>
         <mxCell id="sSYQgpPVTo7JMk-Y0rrn-16" value="Client" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
           <mxGeometry x="110" y="290" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sSYQgpPVTo7JMk-Y0rrn-20" value="Technical Req:&lt;div&gt;1. Users should be able to shorten a long URL&lt;/div&gt;&lt;div&gt;2. Users should be able to enter a short url and get directed to a long URL&lt;/div&gt;&lt;div&gt;3. Users should be able to provide an alias for their shortened URL&amp;nbsp;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-100" y="20" width="330" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="sSYQgpPVTo7JMk-Y0rrn-21" value="&lt;div&gt;Non Technical:&lt;/div&gt;&lt;div&gt;High Availability&lt;/div&gt;&lt;div&gt;Eventual Consistency&lt;/div&gt;&lt;div&gt;Short URL uniqueness&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-100" y="430" width="330" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="sSYQgpPVTo7JMk-Y0rrn-22" value="Monitoring&lt;div&gt;Logging&lt;/div&gt;&lt;div&gt;Alerting&lt;/div&gt;&lt;div&gt;Analytics&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="333" y="460" width="185" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
