@@ -1,63 +1,9 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.14">
-  <diagram name="Page-1" id="HIHJW5go3T7uCI4LzSzF">
-    <mxGraphModel dx="1854" dy="936" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="1">
+  <diagram name="Page-1" id="xT0imI-XlUhjeNkcXfVr">
+    <mxGraphModel>
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="sSYQgpPVTo7JMk-Y0rrn-1" value="Dynamo" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
-          <mxGeometry x="630" y="280" width="60" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="sSYQgpPVTo7JMk-Y0rrn-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" target="sSYQgpPVTo7JMk-Y0rrn-3">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="150" y="320" as="sourcePoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="sSYQgpPVTo7JMk-Y0rrn-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="sSYQgpPVTo7JMk-Y0rrn-3" target="sSYQgpPVTo7JMk-Y0rrn-5">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="313" y="300" />
-              <mxPoint x="313" y="240" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="sSYQgpPVTo7JMk-Y0rrn-3" value="Gateway" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=1;direction=south;" vertex="1" parent="1">
-          <mxGeometry x="210" y="260" width="50" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="sSYQgpPVTo7JMk-Y0rrn-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="sSYQgpPVTo7JMk-Y0rrn-5" target="sSYQgpPVTo7JMk-Y0rrn-12">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="425" y="160" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="sSYQgpPVTo7JMk-Y0rrn-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="sSYQgpPVTo7JMk-Y0rrn-5" target="sSYQgpPVTo7JMk-Y0rrn-1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="sSYQgpPVTo7JMk-Y0rrn-5" value="write service" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="365" y="200" width="120" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="sSYQgpPVTo7JMk-Y0rrn-6" value="read service" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="365" y="340" width="120" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="sSYQgpPVTo7JMk-Y0rrn-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.05;entryY=0.413;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="sSYQgpPVTo7JMk-Y0rrn-3" target="sSYQgpPVTo7JMk-Y0rrn-6">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="sSYQgpPVTo7JMk-Y0rrn-12" value="Atomic counter" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="385" y="90" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="sSYQgpPVTo7JMk-Y0rrn-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=52.5;entryPerimeter=0;" edge="1" parent="1" source="sSYQgpPVTo7JMk-Y0rrn-6" target="sSYQgpPVTo7JMk-Y0rrn-1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="sSYQgpPVTo7JMk-Y0rrn-16" value="Client" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="110" y="290" width="30" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="sSYQgpPVTo7JMk-Y0rrn-20" value="Technical Req:&lt;div&gt;1. Users should be able to shorten a long URL&lt;/div&gt;&lt;div&gt;2. Users should be able to enter a short url and get directed to a long URL&lt;/div&gt;&lt;div&gt;3. Users should be able to provide an alias for their shortened URL&amp;nbsp;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-100" y="20" width="330" height="140" as="geometry" />
-        </mxCell>
-        <mxCell id="sSYQgpPVTo7JMk-Y0rrn-21" value="&lt;div&gt;Non Technical:&lt;/div&gt;&lt;div&gt;High Availability&lt;/div&gt;&lt;div&gt;Eventual Consistency&lt;/div&gt;&lt;div&gt;Short URL uniqueness&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-100" y="430" width="330" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="sSYQgpPVTo7JMk-Y0rrn-22" value="Monitoring&lt;div&gt;Logging&lt;/div&gt;&lt;div&gt;Alerting&lt;/div&gt;&lt;div&gt;Analytics&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="333" y="460" width="185" height="60" as="geometry" />
-        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
