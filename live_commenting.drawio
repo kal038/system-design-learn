@@ -20,7 +20,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="AGAZiFI2uEtaipXFu5Ni" name="Live_comment_lesson">
-    <mxGraphModel dx="2620" dy="1499" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2250" dy="1316" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -72,12 +72,13 @@
             <mxPoint x="990" y="190" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aTgRoJ_GWIuc6CK69tfu-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="aTgRoJ_GWIuc6CK69tfu-8" target="aTgRoJ_GWIuc6CK69tfu-35" edge="1">
+        <mxCell id="aTgRoJ_GWIuc6CK69tfu-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="aTgRoJ_GWIuc6CK69tfu-8" target="aTgRoJ_GWIuc6CK69tfu-35" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1090" y="60" />
+              <mxPoint x="1090" y="90" />
               <mxPoint x="1090" y="-40" />
             </Array>
+            <mxPoint x="1050" y="80" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="aTgRoJ_GWIuc6CK69tfu-8" value="Comment Service (n)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -90,7 +91,7 @@
           <mxGeometry x="790" y="-150" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="aTgRoJ_GWIuc6CK69tfu-14" value="Zookeeper" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="930" y="-40" width="120" height="60" as="geometry" />
+          <mxGeometry x="920" y="-40" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="aTgRoJ_GWIuc6CK69tfu-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="aTgRoJ_GWIuc6CK69tfu-16" target="aTgRoJ_GWIuc6CK69tfu-32" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -99,7 +100,7 @@
           <mxGeometry x="1120" y="70" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="aTgRoJ_GWIuc6CK69tfu-18" value="NoSQL" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
-          <mxGeometry x="960" y="180" width="60" height="80" as="geometry" />
+          <mxGeometry x="950" y="180" width="60" height="80" as="geometry" />
         </mxCell>
         <mxCell id="aTgRoJ_GWIuc6CK69tfu-19" value="" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="700" y="300" width="440" height="140" as="geometry" />
