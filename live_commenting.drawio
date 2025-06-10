@@ -40,6 +40,8 @@
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="575" y="-20" />
+              <mxPoint x="720" y="-20" />
+              <mxPoint x="720" y="-120" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -217,6 +219,9 @@
         </mxCell>
         <mxCell id="LiqD77Q6oIcKLKKa2H_O-10" value="HLD" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="1035" y="-382" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LiqD77Q6oIcKLKKa2H_O-11" value="User always initiates a connection with Websocket server after knowing its address&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="700" y="540" width="460" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
