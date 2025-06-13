@@ -1,6 +1,175 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="27.0.9">
-  <diagram name="Page-1" id="Qar15B0lZWAYP_aXEpTu">
-    <mxGraphModel>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="27.0.9" pages="3">
+  <diagram id="rrt08mTdbV4Ez_OqWZq8" name="metric_system_self">
+    <mxGraphModel dx="1818" dy="1089" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="EiIzv206Czw_Q5J7Fr_B-1" value="Technical Requirements:&lt;div&gt;1. Ingest time-series metric, log&lt;/div&gt;&lt;div&gt;2. Support querying by metric/time/aggreagation over time windows&lt;/div&gt;&lt;div&gt;3. Alerting? Dashboard?&lt;/div&gt;&lt;div&gt;Non-technical Requirements:&lt;/div&gt;&lt;div&gt;1. Durable&lt;/div&gt;&lt;div&gt;2 Highly Available&lt;/div&gt;&lt;div&gt;3. Eventual Consistency&lt;/div&gt;&lt;div&gt;4. Low Latency&lt;/div&gt;&lt;div&gt;5. Highly Scalable&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-230" y="-10" width="270" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="EiIzv206Czw_Q5J7Fr_B-3" value="API:&lt;div&gt;1. sendMetric(source, payload, timestamp)&lt;/div&gt;&lt;div&gt;2. fetchData(timeRange, metricId)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-230" y="230" width="270" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="LMbVaU-qbbnQhoEsbWTy-1" value="1. Apple trade-offs (is this the tech selection)&lt;div&gt;2. Back of envelop skipping?&amp;nbsp;&lt;/div&gt;&lt;div&gt;3. SQL heavy team (DynamoDb?)&lt;/div&gt;&lt;div&gt;4. What if we have extra time after HLD (DB design? Failure Modes?&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;)&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-275" y="-120" width="390" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="LMbVaU-qbbnQhoEsbWTy-3" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="490" as="sourcePoint" />
+            <mxPoint x="120" y="-80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LMbVaU-qbbnQhoEsbWTy-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="LMbVaU-qbbnQhoEsbWTy-4" target="LMbVaU-qbbnQhoEsbWTy-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LMbVaU-qbbnQhoEsbWTy-4" value="Metric Producer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LMbVaU-qbbnQhoEsbWTy-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="LMbVaU-qbbnQhoEsbWTy-6" target="LMbVaU-qbbnQhoEsbWTy-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LMbVaU-qbbnQhoEsbWTy-6" value="Collector Service (n)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LMbVaU-qbbnQhoEsbWTy-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="LMbVaU-qbbnQhoEsbWTy-8" target="LMbVaU-qbbnQhoEsbWTy-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LMbVaU-qbbnQhoEsbWTy-8" value="Kafka" style="ellipse;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="410" y="200" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LMbVaU-qbbnQhoEsbWTy-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="LMbVaU-qbbnQhoEsbWTy-11" target="LMbVaU-qbbnQhoEsbWTy-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LMbVaU-qbbnQhoEsbWTy-11" value="Consumers" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LMbVaU-qbbnQhoEsbWTy-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="LMbVaU-qbbnQhoEsbWTy-12" target="LMbVaU-qbbnQhoEsbWTy-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="730" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LMbVaU-qbbnQhoEsbWTy-12" value="TSDB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="700" y="200" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LMbVaU-qbbnQhoEsbWTy-17" value="S3 Lake" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="320" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LMbVaU-qbbnQhoEsbWTy-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="LMbVaU-qbbnQhoEsbWTy-17" target="LMbVaU-qbbnQhoEsbWTy-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LMbVaU-qbbnQhoEsbWTy-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="LMbVaU-qbbnQhoEsbWTy-19" target="LMbVaU-qbbnQhoEsbWTy-17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="910" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LMbVaU-qbbnQhoEsbWTy-19" value="Query Service (n)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LMbVaU-qbbnQhoEsbWTy-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="LMbVaU-qbbnQhoEsbWTy-19" target="LMbVaU-qbbnQhoEsbWTy-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LMbVaU-qbbnQhoEsbWTy-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="LMbVaU-qbbnQhoEsbWTy-22" target="LMbVaU-qbbnQhoEsbWTy-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LMbVaU-qbbnQhoEsbWTy-22" value="Alerting" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LMbVaU-qbbnQhoEsbWTy-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="LMbVaU-qbbnQhoEsbWTy-23" target="LMbVaU-qbbnQhoEsbWTy-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LMbVaU-qbbnQhoEsbWTy-23" value="Viz System" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LMbVaU-qbbnQhoEsbWTy-25" value="1B messages/day&lt;div&gt;100 bytes/item&lt;/div&gt;&lt;div&gt;100Gb data per day 10^9&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-420" width="180" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="LMbVaU-qbbnQhoEsbWTy-26" value="Access pattern based on time -&amp;gt; Time series database (Prometheus, InfluxDB, TimescaleDB (PostgresSQL))" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="-10" width="390" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="metric_system_lesson" id="Qar15B0lZWAYP_aXEpTu">
+    <mxGraphModel dx="1931" dy="1166" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="QD8W8PlakdCoEgX7PXZW-1" value="Functional Requirements:&lt;div&gt;1. Users can call increment to log a metric from their service&lt;/div&gt;&lt;div&gt;2. Admins can query the metric in some kind of meaningful way&lt;/div&gt;&lt;div&gt;Non-functional requirements:&lt;/div&gt;&lt;div&gt;1. Durable&lt;/div&gt;&lt;div&gt;2. Low latency&lt;/div&gt;&lt;div&gt;3. High Availability&lt;/div&gt;&lt;div&gt;4. Eventual Consistency (maybe Weak?)&lt;/div&gt;&lt;div&gt;5. High Scalable&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-770" y="570" width="230" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="QD8W8PlakdCoEgX7PXZW-3" value="API:&lt;div&gt;increment(&quot;some-metric&quot;)&lt;/div&gt;&lt;div&gt;send(&quot;timestamp&quot;, payload)&lt;/div&gt;&lt;div&gt;fetchData(&quot;some-metric&quot;, time_window) -&amp;gt; metric: hit_count, duration&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-770" y="390" width="230" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="QD8W8PlakdCoEgX7PXZW-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QD8W8PlakdCoEgX7PXZW-4" target="QD8W8PlakdCoEgX7PXZW-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QD8W8PlakdCoEgX7PXZW-4" value="Internal Services" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-350" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QD8W8PlakdCoEgX7PXZW-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QD8W8PlakdCoEgX7PXZW-5" target="QD8W8PlakdCoEgX7PXZW-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QD8W8PlakdCoEgX7PXZW-5" value="Collector Service (n)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-350" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QD8W8PlakdCoEgX7PXZW-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QD8W8PlakdCoEgX7PXZW-7" target="QD8W8PlakdCoEgX7PXZW-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QD8W8PlakdCoEgX7PXZW-7" value="Kafka Queue" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-150" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QD8W8PlakdCoEgX7PXZW-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QD8W8PlakdCoEgX7PXZW-9" target="QD8W8PlakdCoEgX7PXZW-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QD8W8PlakdCoEgX7PXZW-9" value="Consumer Group" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QD8W8PlakdCoEgX7PXZW-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QD8W8PlakdCoEgX7PXZW-11" target="QD8W8PlakdCoEgX7PXZW-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QD8W8PlakdCoEgX7PXZW-11" value="Hot Store (TSDB)" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="250" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QD8W8PlakdCoEgX7PXZW-13" value="S3 (cold store)" style="ellipse;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="270" y="480" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="QD8W8PlakdCoEgX7PXZW-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QD8W8PlakdCoEgX7PXZW-15" target="QD8W8PlakdCoEgX7PXZW-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QD8W8PlakdCoEgX7PXZW-15" value="Query Service (n)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="350" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QD8W8PlakdCoEgX7PXZW-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.038;entryY=0.6;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="QD8W8PlakdCoEgX7PXZW-15" target="QD8W8PlakdCoEgX7PXZW-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="510" y="528" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QD8W8PlakdCoEgX7PXZW-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="QD8W8PlakdCoEgX7PXZW-19" target="QD8W8PlakdCoEgX7PXZW-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QD8W8PlakdCoEgX7PXZW-19" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="720" y="340" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QD8W8PlakdCoEgX7PXZW-21" value="timestamp | metric | hits" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="235" y="300" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QD8W8PlakdCoEgX7PXZW-22" value="1. some knowledge gaps&lt;div&gt;2. cold store might not be best idea (not good live service) only good for offline data processing&lt;/div&gt;&lt;div&gt;3. think more about admin&#39;s query expereicne&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-510" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QD8W8PlakdCoEgX7PXZW-23" value="Design khong fit requirement ghi xuong (consistency)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-245" y="450" width="310" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="Ql6u4tIKlcVle_fKWent" name="freestyle_lesson">
+    <mxGraphModel dx="1018" dy="689" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
