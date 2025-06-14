@@ -1,51 +1,9 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.14">
-  <diagram name="Page-1" id="xT0imI-XlUhjeNkcXfVr">
-    <mxGraphModel dx="1018" dy="655" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="27.1.5">
+  <diagram name="Page-1" id="Z5L0yhXKp6MArA7WwjhW">
+    <mxGraphModel>
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="1C2ylxhmPG8-6zjQa_A_-5" value="Take long URL -&amp;gt; short url&amp;nbsp;&lt;div&gt;Service determines the short url&lt;/div&gt;&lt;div&gt;Short urls live indefinitely&lt;/div&gt;&lt;div&gt;User gets redirected to original URL&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="10" y="70" width="250" height="110" as="geometry" />
-        </mxCell>
-        <mxCell id="1C2ylxhmPG8-6zjQa_A_-6" value="Highly Available: should get redirected everytime&lt;div&gt;Eventual Consistency&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="10" y="270" width="250" height="150" as="geometry" />
-        </mxCell>
-        <mxCell id="1C2ylxhmPG8-6zjQa_A_-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="1C2ylxhmPG8-6zjQa_A_-7" target="1C2ylxhmPG8-6zjQa_A_-8">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="1C2ylxhmPG8-6zjQa_A_-7" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="390" y="230" width="30" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="1C2ylxhmPG8-6zjQa_A_-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1C2ylxhmPG8-6zjQa_A_-8" target="1C2ylxhmPG8-6zjQa_A_-11">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="1C2ylxhmPG8-6zjQa_A_-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1C2ylxhmPG8-6zjQa_A_-8" target="1C2ylxhmPG8-6zjQa_A_-12">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="1C2ylxhmPG8-6zjQa_A_-8" value="Api Gateway" style="rounded=0;whiteSpace=wrap;html=1;direction=south;" vertex="1" parent="1">
-          <mxGeometry x="490" y="200" width="60" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="1C2ylxhmPG8-6zjQa_A_-11" value="Create URL service" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="620" y="140" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="1C2ylxhmPG8-6zjQa_A_-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1C2ylxhmPG8-6zjQa_A_-12" target="1C2ylxhmPG8-6zjQa_A_-13">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="1C2ylxhmPG8-6zjQa_A_-12" value="Redirect Service" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="620" y="290" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="1C2ylxhmPG8-6zjQa_A_-13" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
-          <mxGeometry x="800" y="220" width="60" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="1C2ylxhmPG8-6zjQa_A_-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.117;entryY=0.363;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="1C2ylxhmPG8-6zjQa_A_-11" target="1C2ylxhmPG8-6zjQa_A_-13">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="1C2ylxhmPG8-6zjQa_A_-18" value="short_id : string PK&lt;div&gt;long_id: string&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="380" y="30" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="1C2ylxhmPG8-6zjQa_A_-19" value="+: trinh bay luu loat&lt;div&gt;-: microservice ko dc access same db&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="330" y="410" width="120" height="60" as="geometry" />
-        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
