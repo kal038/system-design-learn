@@ -1,9 +1,84 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="27.1.5">
   <diagram name="Page-1" id="Z5L0yhXKp6MArA7WwjhW">
-    <mxGraphModel>
+    <mxGraphModel dx="1018" dy="637" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="Du6z7Kcsw06nLNlUTcWP-1" value="Functional requirements:&lt;div&gt;1. User is displayed a set of questions&lt;br&gt;2. User can submit their solution to a problem that&#39;s in a partiular languge&lt;br&gt;3. Autograder tells the user if their solution is correct&lt;/div&gt;&lt;div&gt;4. Leaderboards and Weekly Competitions&amp;nbsp;&lt;/div&gt;&lt;div&gt;Non-functional requirements:&lt;/div&gt;&lt;div&gt;0. Security (run solution in a enclosed env)&lt;/div&gt;&lt;div&gt;1. Highly Durable&lt;br&gt;2. Low latency&lt;/div&gt;&lt;div&gt;3. Highly Available&lt;/div&gt;&lt;div&gt;4. Eventual consistency (questions added later not guaranteedt o be seen immediately)&lt;/div&gt;&lt;div&gt;5. Highly Scalable (1M DAU) not as high scale as IG&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="130" width="270" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="Du6z7Kcsw06nLNlUTcWP-2" value="API:&lt;br&gt;1. GET v1/questions?page = 10&amp;amp;offset = 25&amp;nbsp;&lt;div&gt;2. POST v1/ questions/{questionId} {&lt;/div&gt;&lt;div&gt;userId, solutionCode&lt;/div&gt;&lt;div&gt;} -&amp;gt; {testcaseId: (pass|fail)}&lt;/div&gt;&lt;div&gt;3. GET v1/leaderboard&lt;/div&gt;&lt;div&gt;4. POST v1/competitions {&lt;/div&gt;&lt;div&gt;userId, competitionId}&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="400" width="270" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="Du6z7Kcsw06nLNlUTcWP-3" value="&lt;b&gt;Pagination&lt;/b&gt;: Cursor and offset&amp;nbsp;&lt;div&gt;1. cursor used when dataset changes between fetches&lt;/div&gt;&lt;div&gt;2. offset when the dataset is still&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="50" y="683" width="310" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Du6z7Kcsw06nLNlUTcWP-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Du6z7Kcsw06nLNlUTcWP-4" target="Du6z7Kcsw06nLNlUTcWP-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Du6z7Kcsw06nLNlUTcWP-4" value="Client" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="560" y="370" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Du6z7Kcsw06nLNlUTcWP-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Du6z7Kcsw06nLNlUTcWP-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="920" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Du6z7Kcsw06nLNlUTcWP-27" value="POST" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Du6z7Kcsw06nLNlUTcWP-7">
+          <mxGeometry x="-0.2697" relative="1" as="geometry">
+            <mxPoint x="3" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Du6z7Kcsw06nLNlUTcWP-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="Du6z7Kcsw06nLNlUTcWP-5" target="Du6z7Kcsw06nLNlUTcWP-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Du6z7Kcsw06nLNlUTcWP-26" value="GET question/question" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Du6z7Kcsw06nLNlUTcWP-25">
+          <mxGeometry x="-0.1022" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Du6z7Kcsw06nLNlUTcWP-5" value="API Gateway" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Du6z7Kcsw06nLNlUTcWP-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Du6z7Kcsw06nLNlUTcWP-8" target="Du6z7Kcsw06nLNlUTcWP-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Du6z7Kcsw06nLNlUTcWP-8" value="Web Server (n)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Du6z7Kcsw06nLNlUTcWP-9" value="Postgres" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="360" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Du6z7Kcsw06nLNlUTcWP-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Du6z7Kcsw06nLNlUTcWP-8" target="Du6z7Kcsw06nLNlUTcWP-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Du6z7Kcsw06nLNlUTcWP-11" value="ACID properties" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1275" y="430" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Du6z7Kcsw06nLNlUTcWP-12" value="Think about traffic and query patten" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="488" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Du6z7Kcsw06nLNlUTcWP-16" value="questionId, problem statement, metadata, testcaseId (maps to testcase table)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1270" y="340" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Du6z7Kcsw06nLNlUTcWP-18" value="Lambdas" style="ellipse;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="940" y="220" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Du6z7Kcsw06nLNlUTcWP-20" value="VM, Dockerized Containers, Lambdas. Explain lambdas, how to spawn" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="795" y="170" width="400" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Du6z7Kcsw06nLNlUTcWP-21" value="+ delivery structure&lt;div&gt;+ HLD&lt;/div&gt;&lt;div&gt;+ functional make sure interviewer are on the same page&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="695" y="533" width="330" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Du6z7Kcsw06nLNlUTcWP-22" value="non-functional: don&#39;t forget security and privacy, super important. Just say that the system should be secured overall (but out of scope for the problem)&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;fault-tolerant, reliability&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="560" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Du6z7Kcsw06nLNlUTcWP-23" value="&quot;This is my prelim input and output, we can fine grain it later&quot;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="350" y="518" width="340" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Du6z7Kcsw06nLNlUTcWP-24" value="HLD:&lt;div&gt;1. database tradeoffs (be super ready to explain when you choose one over the other)&lt;/div&gt;&lt;div&gt;2. Questions service handling everything?&lt;/div&gt;&lt;div&gt;3. Solution service is pretty services&lt;/div&gt;&lt;div&gt;4. Call out multiple services&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="100" width="210" height="180" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
