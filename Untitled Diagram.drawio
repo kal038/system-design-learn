@@ -79,6 +79,12 @@
         <mxCell id="Du6z7Kcsw06nLNlUTcWP-24" value="HLD:&lt;div&gt;1. database tradeoffs (be super ready to explain when you choose one over the other)&lt;/div&gt;&lt;div&gt;2. Questions service handling everything?&lt;/div&gt;&lt;div&gt;3. Solution service is pretty services&lt;/div&gt;&lt;div&gt;4. Call out multiple services&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="570" y="100" width="210" height="180" as="geometry" />
         </mxCell>
+        <mxCell id="Du6z7Kcsw06nLNlUTcWP-29" value="POST flow:&lt;div&gt;1. POST API gets called&lt;/div&gt;&lt;div&gt;2. Routed to DB&lt;/div&gt;&lt;div&gt;3. Get testcases&amp;nbsp;&lt;/div&gt;&lt;div&gt;4. Stuff into Lambda to run the candidate code&lt;/div&gt;&lt;div&gt;5. Get P/F result and returns back to the user via web servers&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="600" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Du6z7Kcsw06nLNlUTcWP-30" value="GET:&lt;br&gt;1. Need 2 know pagination (cursor and offset-based)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="600" width="290" height="120" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
